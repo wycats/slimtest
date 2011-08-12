@@ -9,7 +9,7 @@ Hoe.add_include_dirs("../../minitest/dev/lib")
 
 Hoe.plugin :seattlerb
 
-Hoe.spec "ZenTest" do
+Hoe.spec "SlimTest" do
   developer 'Ryan Davis', 'ryand-ruby@zenspider.com'
   developer 'Eric Hodel', 'drbrain@segment7.net'
 end
