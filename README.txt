@@ -1,16 +1,20 @@
-= ZenTest
+= SlimTest
 
-home :: https://github.com/seattlerb/zentest
-rdoc :: http://zentest.rubyforge.org/ZenTest
+original home :: https://github.com/seattlerb/zentest
+home          :: https://github.com/wycats/zentest
 
 == DESCRIPTION
 
-ZenTest provides 4 different tools: zentest, unit_diff, autotest, and
-multiruby.
+SlimTest is a fork of the MIT-licensed ZenTest without the
+unnecessary dependency of Rubygems 1.8. To avoid conflicts,
+all binaries are renamed with a `slim-` prefix.
 
-ZenTest scans your target and unit-test code and writes your missing
+SlimTest provides 4 different tools: slim-zentest,
+slim-unit_diff, slim-autotest, and slim-multiruby.
+
+SlimTest scans your target and unit-test code and writes your missing
 code based on simple naming rules, enabling XP at a much quicker
-pace. ZenTest only works with Ruby and Test::Unit. Nobody uses this
+pace. SlimTest only works with Ruby and Test::Unit. Nobody uses this
 tool anymore but it is the package namesake, so it stays.
 
 unit_diff is a command-line filter to diff expected results from
@@ -28,15 +32,15 @@ installed versions.
 
 == STRATEGERY
 
-There are two strategeries intended for ZenTest: test conformance
+There are two strategeries intended for SlimTest: test conformance
 auditing and rapid XP.
 
-For auditing, ZenTest provides an excellent means of finding methods
+For auditing, SlimTest provides an excellent means of finding methods
 that have slipped through the testing process. I've run it against my
 own software and found I missed a lot in a well tested
 package. Writing those tests found 4 bugs I had no idea existed.
 
-ZenTest can also be used to evaluate generated code and execute your
+SlimTest can also be used to evaluate generated code and execute your
 tests, allowing for very rapid development of both tests and
 implementation.
 
@@ -47,13 +51,13 @@ implementation.
 * Continually and intelligently test only those files you change with autotest.
 * Test against multiple versions with multiruby.
 * Enhance and automatically audit your rails tests using Test::Rails.
-* Includes a LinuxJournal article on testing with ZenTest written by Pat Eyler.
+* Includes a LinuxJournal article on testing with SlimTest written by Pat Eyler.
 * See also: http://blog.zenspider.com/archives/zentest/
 * See also: http://blog.segment7.net/articles/category/zentest
 
 == SYNOPSYS
 
-  ZenTest MyProject.rb TestMyProject.rb > missing.rb
+  SlimTest MyProject.rb TestMyProject.rb > missing.rb
 
   ./TestMyProject.rb | unit_diff
 
@@ -78,7 +82,7 @@ Read this: http://blog.mmediasys.com/2010/11/24/we-all-love-colors/
 
 == INSTALL
 
-* sudo gem install ZenTest
+* sudo gem install SlimTest
 
 == LICENSE
 
